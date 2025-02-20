@@ -1,6 +1,9 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +18,16 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val buttonOperation: Button = findViewById(R.id.buttonOperation)
+
+        buttonOperation.setOnClickListener{
+            Toast.makeText(this, "Presionaste el Boton", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SegundoActivity::class.java)
+            intent.putExtra("nombre","Juan")
+            intent.putExtra("edad",30)
+
+            startActivity(intent)
         }
     }
 }

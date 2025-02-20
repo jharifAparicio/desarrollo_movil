@@ -34,10 +34,10 @@ class MainActivity : AppCompatActivity() {
             val c: Int = editTextValueC.text.toString().toInt()
             val d: Int = editTextValueD.text.toString().toInt()
             val operation = Operation()
-            val add = operation.Add(a,b,c,d)
-            val multiply = operation.Multiply(a,b,c,d)
-            val subtract = operation.Subtract(a,b,c,d)
-            val split = operation.Split(a,b,c,d)
+            val add = operation.add(a,b,c,d)
+            val multiply = operation.multiply(a,b,c,d)
+            val subtract = operation.subtract(a,b,c,d)
+            val split = operation.split(a,b,c,d)
             val result: String =
                     " suma: "+ add +
                     "\n resta: "+ subtract +
