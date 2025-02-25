@@ -1,6 +1,7 @@
 <resources>
     <string name="BaseDatos"> Base de datos</string>
     <string name="Graficos"> Graficos</string>
+    <string name="Animacion"> Animacion</string>
     <string name="Calculadora"> Calculadora</string>
     <string name="Salir"> Salir</string>
 

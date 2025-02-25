@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         val BtnBaseDatos:Button = findViewById(R.id.BtnBaseDatos)
         val BtnGraficos:Button = findViewById(R.id.BtnGraficos)
+        val BtnAnimacion:Button = findViewById(R.id.BtnAnimacion)
         val BtnCalculadora:Button = findViewById(R.id.BtnCalculadora)
         val BtnSalir:Button = findViewById(R.id.BtnSalir)
 
@@ -31,6 +32,11 @@ class MainActivity : AppCompatActivity() {
 
         BtnGraficos.setOnClickListener{
             val intent =Intent(this, GraficosActivity::class.java)
+            startActivity(intent)
+        }
+
+        BtnAnimacion.setOnClickListener{
+            val intent =Intent(this, AnimacionActivity::class.java)
             startActivity(intent)
         }
 

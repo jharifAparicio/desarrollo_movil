@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication3">
         <activity
+            android:name=".AnimacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Animacion"
+            android:exported="false" />
+        <activity
             android:name=".GraficosActivity"
             android:exported="false" />
         <activity
