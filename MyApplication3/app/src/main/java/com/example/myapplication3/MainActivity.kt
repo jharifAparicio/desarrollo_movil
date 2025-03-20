@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         val BtnBaseDatos:Button = findViewById(R.id.BtnBaseDatos)
         val BtnGraficos:Button = findViewById(R.id.BtnGraficos)
         val BtnAnimacion:Button = findViewById(R.id.BtnAnimacion)
+        val BtnRecursividad: Button = findViewById(R.id.BtnRecursividad)
         val BtnCalculadora:Button = findViewById(R.id.BtnCalculadora)
         val BtnSalir:Button = findViewById(R.id.BtnSalir)
 
@@ -42,6 +43,11 @@ class MainActivity : AppCompatActivity() {
 
         BtnCalculadora.setOnClickListener{
             val intent =Intent(this, CalculadoraActivity::class.java)
+            startActivity(intent)
+        }
+
+        BtnRecursividad.setOnClickListener{
+            val intent =Intent(this, RecursividadActivity::class.java)
             startActivity(intent)
         }
 

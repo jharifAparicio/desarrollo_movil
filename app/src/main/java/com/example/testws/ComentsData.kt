@@ -1,9 +1,9 @@
 package com.example.testws
 
 data class ComentsData(
-    val body: String,
-    val email: String,
+    val postId: Int,
     val id: Int,
     val name: String,
-    val postId: Int
+    val email: String,
+    val body: String
 )

@@ -2,6 +2,7 @@
     <string name="BaseDatos"> Base de datos</string>
     <string name="Graficos"> Graficos</string>
     <string name="Animacion"> Animacion</string>
+    <string name="Recursividad"> Cantor </string>
     <string name="Calculadora"> Calculadora</string>
     <string name="Salir"> Salir</string>
 
@@ -21,4 +22,6 @@
     <string name="Multiplicacion">X</string>
     <string name="Division">/</string>
     <string name="Igual">=</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="API_KEY">AIzaSyDd6XB-ieuO5rTz9usLZp_PgwtX4cL9pyo</string>
 </resources>

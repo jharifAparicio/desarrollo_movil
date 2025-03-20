@@ -27,6 +27,12 @@
         android:text="@string/Animacion"/>
 
     <Button
+        android:id="@+id/BtnRecursividad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Recursividad"/>
+
+    <Button
         android:id="@+id/BtnCalculadora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

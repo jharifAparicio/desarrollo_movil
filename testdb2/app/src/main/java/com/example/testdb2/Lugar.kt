@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 // crea la tabla de forma implicita
 @Entity(tableName = "lugares")
 
-data class lugar(
+data class Lugar(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
 
