@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/hola_mundo.dart';
 import 'calculadora_view.dart';
+import 'graficos/graficador.dart';
+import 'graficos/carteciano.dart';
+import 'graficos/cantor.dart';
 
 void main() {
-  runApp(const Principal());
+  runApp(
+    MaterialApp(
+      home: Principal(),
+    ),
+  );
 }
 
 class Principal extends StatelessWidget {
@@ -16,6 +23,9 @@ class Principal extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         '/calculadora': (BuildContext context) => const Operaciones(),
         '/hola': (BuildContext context) => const HolaView(),
+        '/graficador': (BuildContext context) => const DibujoApp(),
+        '/carteciano': (BuildContext context) => CartecianoApp(),
+        '/cantor': (BuildContext context) => CantorSetDrawer()
       },
     );
   }
@@ -42,6 +52,15 @@ class MyHomePage extends StatelessWidget {
               onPressed: () => Navigator.of(context).pushNamed('/hola'),
               child: const Text('Ver Hola Mundo'),
             ),
+            ElevatedButton(
+                onPressed: () => Navigator.of(context).pushNamed('/graficador'),
+                child: const Text('Ver Graficador')),
+            ElevatedButton(
+                onPressed: () => Navigator.of(context).pushNamed('/carteciano'),
+                child: const Text('Ver Plano Cartesiano')),
+            ElevatedButton(
+                onPressed: () => Navigator.of(context).pushNamed('/cantor'),
+                child: const Text('Ver Conjunto de Cantor'))
           ],
         )));
   }
